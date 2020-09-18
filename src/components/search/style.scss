@@ -1,0 +1,35 @@
+@mixin search-color {
+  font-family: Hero-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #b3b9c2;
+}
+.search-wrapper {
+  background-color: #fff;
+  border-radius: 6px;
+  align-items: center;
+  display: flex;
+
+  .search-icon {
+    width: 21.5px;
+    fill: #c2c8d0;
+    margin-left: 18px;
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    @include search-color();
+    &::placeholder {
+      @include search-color();
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    height: 20px;
+    border: none;
+  }
+}

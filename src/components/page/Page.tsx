@@ -1,5 +1,5 @@
 import React from 'react';
-import './Style.scss';
+import './style.scss';
 
 const Page: React.FC = ({ children }) => {
   return <div className="page-wrapper">{children}</div>;
