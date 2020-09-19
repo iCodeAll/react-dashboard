@@ -72,12 +72,14 @@ const CampaignTable: React.FC<IPropsForCampaignTable> = ({ tableData }) => {
   return (
     <div className="campaign">
       <div className="campaign-wrapper">
-        <table className="campaign-table">
-          <thead>
-            <tr>{headerTemplate}</tr>
-          </thead>
-          <tbody>{tableContentTemplate}</tbody>
-        </table>
+        <div className="table-wrapper">
+          <table className="campaign-table">
+            <thead>
+              <tr>{headerTemplate}</tr>
+            </thead>
+            <tbody>{tableContentTemplate}</tbody>
+          </table>
+        </div>
         <div className="tfoot">
           <div className="add" onClick={() => onAdd()}>
             <AddIcon className="add-icon" />

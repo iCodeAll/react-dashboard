@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchIcon from '@material-ui/icons/Search';
 import './style.scss';
-
+import { useViewport } from '../../hooks';
 const Search: React.FC = () => {
   return (
     <div className="search-wrapper">

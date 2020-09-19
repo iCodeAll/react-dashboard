@@ -6,12 +6,18 @@
 
   &-wrapper {
     padding: 6px 0;
+    overflow-x: hidden;
+
+    .table-wrapper{
+      overflow-x: auto;
+    }
   }
   &-table {
     display: table;
     border-spacing: 0;
     width: 100%;
     border-collapse: collapse;
+    min-width: 1024px;
 
     tbody {
       tr {
@@ -137,5 +143,11 @@
         margin-right: 5px;
       }
     }
+  }
+}
+@media only screen and (max-width: 568px){
+  .campaign .tfoot{
+    justify-content: flex-start;
+    margin-left: 20px;
   }
 }
